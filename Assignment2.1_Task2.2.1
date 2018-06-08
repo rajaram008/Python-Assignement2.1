@@ -1,0 +1,16 @@
+##Assignment2.1
+
+#Task 2.2.1: Write a Python program using function concept that maps list of words into a list of integers
+# representing the lengths of the corresponding words.
+# Hint: ​If a list [ ab,cde,erty] is passed on to the python function output should come as [2,3,4]
+# Here 2,3 and 4 are the lengths of the words in the list.
+
+def word_to_integer(mylist):
+    list1=[]
+    for word in mylist:
+        list1.append(len(word))
+    print(list1)
+    
+word_to_number_map = {"ab","dfr","wfgdwfgdfg","jk","jkgh"}
+word_to_integer(word_to_number_map)
+ 
