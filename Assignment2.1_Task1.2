@@ -1,0 +1,26 @@
+## Assignment2.1 - Task 1.2: Write a Python program to implement your own myfilter() function which works exactly like
+## Python's built-in function filter()
+
+# Check out for the even numbers
+def even_check(lst):
+    lst_out = []
+    for x in lst[:]:
+        if x%2 == 0:            
+            lst_out.append(x)
+    return(lst_out)     
+
+# check out for odd numbers
+def odd_check(lst):
+    lst_out = []
+    for x in lst[:]:
+        if x%2 != 0:            
+            lst_out.append(x)
+    return(lst_out) 
+
+# myfilter function    
+def myfilter(func, lst):              
+    return(func(lst))
+
+input_lst = [1,2,3,4,5]
+print(myfilter(even_check, input_lst))
+print(myfilter(odd_check, input_lst))
