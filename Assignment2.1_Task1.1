@@ -1,0 +1,38 @@
+## Assignment2.1- Task1.1  Write a Python Program to implement your own myreduce() function which works exactly 
+## like Python's built-in function reduce()
+
+# multipy each element of list and give the multiplication of all numbers
+
+def mul(lst):                            
+
+    out = 1
+
+    for x in lst[:]:
+
+        out = out * x
+
+    return out
+
+# add each element of list and give the sum of all numbers
+
+def add(lst):
+
+    out = 0
+
+    for x in lst[:]:
+
+        out = out + x
+
+    return out
+
+#myreduce function which takes function and list as parameter
+
+def myreduce(func, lst):               
+
+    return(func(lst))
+
+input_list = [1,2,3,4,5]
+
+print(myreduce(mul, input_list))
+
+print(myreduce(add, input_list)) 
